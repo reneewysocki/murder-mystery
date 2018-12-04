@@ -32,9 +32,10 @@ app.set("view engine", "handlebars");
 //pp.set('views', './views');
 
 // Routes
+require("./routes/auth")(app);
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
-require("./routes/auth")(app);
+
 
 // require("./routes/auth")(app,passport);
 //load passport strategies
