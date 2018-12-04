@@ -1,5 +1,19 @@
-DROP DATABASE IF EXISTS exampledb;
-CREATE DATABASE exampledb;
+DROP DATABASE IF EXISTS murderdb;
+CREATE DATABASE murderdb;
 
 DROP DATABASE IF EXISTS testdb;
 CREATE DATABASE testdb;
+
+use murderdb;
+
+CREATE TABLE murder (
+    id INT(6) AUTO_INCREMENT NOT NULL,
+    PRIMARY KEY (id)
+);
+
+use testdb;
+
+CREATE TABLE test (
+    id INT(6) AUTO_INCREMENT NOT NULL,
+    PRIMARY KEY (id)
+);

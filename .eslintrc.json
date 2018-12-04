@@ -27,12 +27,11 @@
             2
         ],
         "linebreak-style": [
-            "error",
-            "unix"
+            "off"
         ],
         "quotes": [
             "error",
-            "double"
+            "single"
         ],
         "semi": [
             "error",
