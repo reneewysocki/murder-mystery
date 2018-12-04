@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "SmallShowCoverFeed11",
+    "password": null,
     "database": "murder_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "SmallShowCoverFeed11",
+    "password": null,
     "database": "murder_db",
     "host": "localhost",
     "dialect": "mysql",
