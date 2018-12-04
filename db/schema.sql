@@ -1,0 +1,8 @@
+DROP DATABASE IF EXISTS murderdb;
+
+CREATE DATABASE murderdb;
+
+DROP DATABASE IF EXISTS testdb;
+
+CREATE DATABASE testdb;
+
