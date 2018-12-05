@@ -1,8 +1,5 @@
 DROP DATABASE IF EXISTS murder_db;
-
 CREATE DATABASE murder_db;
 
 DROP DATABASE IF EXISTS test_db;
-
 CREATE DATABASE test_db;
-
