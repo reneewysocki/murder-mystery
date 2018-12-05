@@ -22,6 +22,21 @@ module.exports = function(app) {
     });
   });
 
+  //temporary debug route for userpofile before integration to site
+  app.get('/user', (req, res) => {
+    db.Example.findAll({}).then(dbExamples => {
+      res.render('profileView', {
+        msg: 'Welcome!',
+        examples: dbExamples,
+      });
+    });
+  });
+
+    //user dashboard route for userpofile before integration to site
+    app.get('/dashboard', (req, res) => {
+        res.render('dashboard');
+    });
+
   // Load example page and pass in an example by id
   app.get('/murder/:id', function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(

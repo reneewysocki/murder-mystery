@@ -1,16 +1,27 @@
 <div class="container">
     <div class="row">
-        <div class="col-8 offset-2">
+        <img class="logo-signin mx-auto mb-2" src="images/murder-mystery-logo.png" alt="Murder Mystery">
+    </div>
+    <div class="row">
+        <div class="col-4 mx-auto p-4 signinup">
             <form id="signup" name="signup" method="post" action="/signup">
-                <label for="email">Email Address</label>
-                <input class="text" name="email" type="email" />
-                <label for="firstname">Firstname</label>
-                <input name="firstname" type="text" />
-                <label for="lastname">Lastname</label>
-                <input name="lastname" type="text" />
-                <label for="password">Password</label>
-                <input name="password" type="password" />
-                <input class="btn" type="submit" value="Sign Up" />
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="first name">
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="last name">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <input type="submit" class="btn btn-danger btn-lg" value="Sign Up" />
             </form>
         </div>
     </div>

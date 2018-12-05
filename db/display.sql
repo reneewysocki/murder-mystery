@@ -1,6 +1,6 @@
 USE murderdb;
 
-SELECT * FROM murders;
+SELECT * FROM users;
 
 #use testdb;
 

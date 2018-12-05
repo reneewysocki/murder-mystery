@@ -1,11 +1,10 @@
-require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
 var passport = require("passport");
 var session = require("express-session");
 var env = require('dotenv').load();
-
 var db = require('./models');
+require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -15,15 +14,15 @@ app.use(
   express.urlencoded({
     extended: false,
   })
-);
+); 
 app.use(express.json());
 app.use(express.static('public'));
 
 // For Passport
 
-// app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
-// app.use(passport.initialize());
-// app.use(passport.session()); // persistent login sessions
+app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
+app.use(passport.initialize());
+app.use(passport.session()); // persistent login sessions
 
 // Handlebars
 app.engine(
@@ -33,17 +32,14 @@ app.engine(
   })
 );
 app.set("view engine", "handlebars");
-//pp.set('views', './views');
 
-// Routes
-require("./routes/auth")(app);
+// Routes (order matters don't switch!)
+require("./routes/auth")(app,passport);
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
-
-// require("./routes/auth")(app,passport);
 //load passport strategies
-//require('./config/passport/passport.js')(passport, models.user);
+require('./config/passport/passport')(passport, db.user);
 
 var syncOptions = { force: false };
 
@@ -52,6 +48,8 @@ var syncOptions = { force: false };
 if (process.env.NODE_ENV === 'test') {
   syncOptions.force = true;
 }
+
+
 
 // Starting the server, syncing our models ------------------------------------/
 db.sequelize.sync(syncOptions).then(() => {
