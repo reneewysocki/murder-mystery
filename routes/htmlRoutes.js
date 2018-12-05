@@ -11,20 +11,24 @@ module.exports = function(app) {
     });
   });
 
-    // Load example page and pass in an example by id
-    app.get("/murder", function(req, res) {
-      db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
-        res.render("murder", {
-          example: dbExample
-        });
+  // Load example page and pass in an example by id
+  app.get('/murder', function(req, res) {
+    db.Example.findOne({ where: { id: req.params.id } }).then(function(
+      dbExample
+    ) {
+      res.render('murder', {
+        example: dbExample,
       });
     });
+  });
 
   // Load example page and pass in an example by id
-  app.get("/murder/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.render("murder", {
-        example: dbExample
+  app.get('/murder/:id', function(req, res) {
+    db.Example.findOne({ where: { id: req.params.id } }).then(function(
+      dbExample
+    ) {
+      res.render('murder', {
+        example: dbExample,
       });
     });
   });
