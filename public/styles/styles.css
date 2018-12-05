@@ -1,3 +1,62 @@
-.list-group-item {
-  line-height: 2.5;
+body {
+  background-image: url("/images/murder-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #5d5e60;
+}
+
+a {
+  color: #94001a;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #A72E43;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#logo {
+  width: 100%;
+}
+
+#start-button {
+  background-color: #94001A;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 800;
+  color: white;
+}
+
+.action {
+  background-color: white;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.option {
+  background-color: #94001a;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.option:hover {
+  background-color: #6B0013;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
