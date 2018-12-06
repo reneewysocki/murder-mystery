@@ -16,14 +16,6 @@ module.exports = function(sequelize, Sequelize) {
       notEmpty: true,
     },
 
-    username: {
-      type: Sequelize.TEXT,
-    },
-
-    about: {
-      type: Sequelize.TEXT,
-    },
-
     email: {
       type: Sequelize.STRING,
       validate: {
@@ -44,6 +36,18 @@ module.exports = function(sequelize, Sequelize) {
       type: Sequelize.ENUM('active', 'inactive'),
       defaultValue: 'active',
     },
+
+    // TODO create a psuedo array here with true/false as to whether endings are complete. Generate on new account then SET
+    // endings: {
+    //   type: Sequelize.STRING,
+    //   allowNull: false,
+    //   get() {
+    //     return this.getDataValue('endings').split(';');
+    //   },
+    //   set(val) {
+    //     this.setDataValue('endings', val.join(';'));
+    //   },
+    // },
   });
 
   return User;

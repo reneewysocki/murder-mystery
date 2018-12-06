@@ -1,13 +1,14 @@
-<div class="container signinup mt-2 mx-auto">
+<div class="container signinup mt-2 mx-auto col-sm-12 col-lg-10 p-2">
     <div class="row">
-        <div class="col-12  ">
-            Welcome FirstName LastName
+        <div class="col-8 mx-auto">
+            {{!-- TODO this needs to pull info from user DB --}}
+            Welcome back FirstName LastName
         </div>
     </div>
-    <div class="row ">
-        <div class="col-12 mx-auto">
+    <div class="row">
+        <div class="col-8 mx-auto">
             Story Badges
-            {{!-- This will turn into a handlebars for each loop --}}
+            {{!-- This will be handlebards template. Need to pull completed endings from user db --}}
             <div class="border">Badge Placeholder 1 <img src="https://via.placeholder.com/25" /></div>
             <div class="border">Badge Placeholder 2 <img src="https://via.placeholder.com/25" /></div>
             <div class="border">Badge Placeholder 3 <img src="https://via.placeholder.com/25" /></div>
@@ -21,4 +22,10 @@
         </div>
     </div>
     <div class="row">
-        <div class=</div> </div>
+        <div class="col-8 mx-auto">
+            {{!-- TODO THIS WILL OVERRIDE ALL PROGRESS FOR USER --}}
+            {{!-- Also I want a LARGE ASS warning modal here if clicked to confirm --}}
+            <button class="btn btn-danger text-center"> Reset All Progress?</button>
+        </div>
+    </div>
+</div>
