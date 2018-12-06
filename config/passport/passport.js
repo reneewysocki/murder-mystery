@@ -1,34 +1,18 @@
 //load bcrypt
-var bCrypt = require("bcrypt-nodejs");
+var bCrypt = require('bcrypt-nodejs');
 
 module.exports = function(passport, user) {
   var User = user;
 
   var LocalStrategy = require('passport-local').Strategy;
 
-  //serialize
-  passport.serializeUser(function(user, done) {
-    done(null, user.id);
-  });
-
-  // deserialize user
-  passport.deserializeUser(function(id, done) {
-    User.findById(id).then(function(user) {
-      if (user) {
-        done(null, user.get());
-      } else {
-        done(user.errors, null);
-      }
-    });
-  });
-
   passport.use(
-    "local-signup",
+    'local-signup',
     new LocalStrategy(
       {
-        usernameField: "email",
+        usernameField: 'email',
         passwordField: 'password',
-        passReqToCallback: true // allows us to pass back the entire request to the callback
+        passReqToCallback: true, // allows us to pass back the entire request to the callback
       },
 
       function(req, email, password, done) {
@@ -38,26 +22,28 @@ module.exports = function(passport, user) {
 
         User.findOne({
           where: {
-            email: email
-          }
+            email: email,
+          },
         }).then(function(user) {
           if (user) {
             return done(null, false, {
-              message: 'That email is already taken'
+              message: 'That email is already taken',
             });
           } else {
             var userPassword = generateHash(password);
+
             var data = {
               email: email,
               password: userPassword,
               firstname: req.body.firstname,
-              lastname: req.body.lastname
+              lastname: req.body.lastname,
             };
 
             User.create(data).then(function(newUser, created) {
               if (!newUser) {
                 return done(null, false);
               }
+
               if (newUser) {
                 return done(null, newUser);
               }
