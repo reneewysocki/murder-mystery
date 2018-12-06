@@ -32,10 +32,10 @@ module.exports = function(app) {
     });
   });
 
-    //user dashboard route for userpofile before integration to site
-    app.get('/dashboard', (req, res) => {
-        res.render('dashboard');
-    });
+  //user dashboard route for userpofile before integration to site
+  app.get('/dashboard', (req, res) => {
+    res.render('dashboard');
+  });
 
   // Load example page and pass in an example by id
   app.get('/murder/:id', function(req, res) {
@@ -52,5 +52,4 @@ module.exports = function(app) {
   app.get('*', (req, res) => {
     res.render('404');
   });
-
 };
