@@ -2,7 +2,7 @@ module.exports = {
   development: {
     username: 'root',
     password: process.env.MYSQL_PASSWORD || null,
-    database: 'murderdb',
+    database: 'murder_db',
     host: 'localhost',
     dialect: 'mysql'
   },

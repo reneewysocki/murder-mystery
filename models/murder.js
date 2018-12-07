@@ -26,6 +26,7 @@ module.exports = function(sequelize, Sequelize) {
  
   Murder.bulkCreate([
     {
+      id: 1,
       action:
         'It’s a cold and rainy Monday night.  You’re walking to class at SMU on what seems like a normal evening. You enter Hyer Hall and the lights flicker. You walk up the stairs to room 200 and open the door. You scream',
       optionOne: 'Check for a heart beat.',
