@@ -28,6 +28,56 @@ module.exports = function(sequelize, Sequelize) {
       allowNull: false,
     },
 
+    ending1: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: false,
+    },
+
+    ending2: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: false,
+    },
+
+    ending3: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: false,
+    },
+
+    ending4: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: false,
+    },
+
+    ending5: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: false,
+    },
+
+    ending6: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: false,
+    },
+
+    ending7: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: false,
+    },
+
+    ending8: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: false,
+    },
+
+    ending9: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: false,
+    },
+
+    ending10: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: false,
+    },
+
     last_login: {
       type: Sequelize.DATE,
     },

@@ -3,6 +3,8 @@ var exphbs = require('express-handlebars');
 var passport = require('passport');
 var session = require('express-session');
 var env = require('dotenv').load();
+var flash = require('connect-flash');
+
 var db = require('./models');
 require('dotenv').config();
 
@@ -10,6 +12,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
+app.use(flash());
 app.use(
   express.urlencoded({
     extended: true,
@@ -41,7 +44,7 @@ app.set('view engine', 'handlebars');
 
 // Routes (order matters don't switch!)
 require('./routes/auth')(app, passport);
-require('./routes/apiRoutes')(app);
+//require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
 
 //load passport strategies

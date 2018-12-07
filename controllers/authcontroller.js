@@ -12,7 +12,11 @@ exports.signin = function(req, res) {
 
 exports.dashboard = function(req, res) {
   console.log('dashy!');
-  res.render('dashboard');
+  console.log(req.user.firstname, req.user.lastname);
+  res.render('dashboard', {
+    first: req.user.firstname,
+    last: req.user.lastname,
+  });
 };
 
 exports.logout = function(req, res) {
