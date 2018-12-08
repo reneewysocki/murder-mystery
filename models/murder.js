@@ -1,5 +1,5 @@
 module.exports = function(sequelize, Sequelize) {
-  const Murder = sequelize.define('murder', {
+  var Murders = sequelize.define('murders', {
     id: {
       autoIncrement: true,
       primaryKey: true,
@@ -22,11 +22,15 @@ module.exports = function(sequelize, Sequelize) {
     murderID: {
       type: Sequelize.STRING,
     },
+
+    endpoint: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: false,
+    },
   });
  
-  Murder.bulkCreate([
+  Murders.bulkCreate([
     {
-      id: 1,
       action:
         'It’s a cold and rainy Monday night.  You’re walking to class at SMU on what seems like a normal evening. You enter Hyer Hall and the lights flicker. You walk up the stairs to room 200 and open the door. You scream',
       optionOne: 'Check for a heart beat.',
@@ -35,7 +39,7 @@ module.exports = function(sequelize, Sequelize) {
     },
     {
       action:
-        'You rush to him and check his heartbeat, but you find nothing. The body is still warm. You check his pockets for clue and  find $4.29, a e-cig, a thumb-drive, and a post-it note with the word “MOGUL” scrawled on it.. You take these items and stuff them in your pockets. You turn around to leave room 200, but a shadowy figure with an axe is standing in the doorway, blocking your path. What do you do? ',
+        'You rush to him and check his heartbeat, but you find nothing. The body is still warm. You check his pockets for clues and  find $4.29, a e-cig, a thumb-drive, and a post-it note with the word “MOGUL” scrawled on it.. You take these items and stuff them in your pockets. You turn around to leave room 200, but a shadowy figure with an axe is standing in the doorway, blocking your path. What do you do? ',
       optionOne: 'Ask who it is',
       optionTwo: 'Fight!',
       murderID: '1',
@@ -58,15 +62,15 @@ module.exports = function(sequelize, Sequelize) {
       action:
         'Who’s there?”, you ask nervously. The figure moves closer to you, still in the shadows. “Who’s there?!” you ask a little louder. The figure moves even closer until you are just inches apart, your back is against the wall. You scream as you feel the knife inserted into your gut. As the darkness falls over you, a voice that sounds like Arnold Schwarzenegger but not quite comes from the figure… “Get to the choppa!',
       murderID: 'A.2.EP',
+      endpoint: true,
     },
   ])
     .then(() => {
-      return Murder.findAll();
+      return Murders.findAll();
     })
-    .then(murders => {
+    .then((murders) => {
       console.log(murders);
     });
- 
-  return Murder;
+  return Murders;
  };
  
