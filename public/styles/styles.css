@@ -82,9 +82,27 @@ a:hover {
   border: #94001A;
 }
 
+.ending {
+  text-align: center;
+}
+
 .ending-desc {
   font-size: 1.6rem !important;
   line-height: 3rem;
+}
+
+#dashboard-btn-div {
+  margin-top: 20px;
+}
+
+.dash-btn {
+  width: 100%;
+}
+
+#badge-heading {
+  background-color: #6B0013;
+  color: white;
+  text-align: center;
 }
 
 .border-round {
