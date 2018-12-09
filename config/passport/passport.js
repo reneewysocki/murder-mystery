@@ -55,6 +55,8 @@ module.exports = function(passport, user) {
               lastname: req.body.lastname,
             };
 
+            console.log('in passy strat ', data.firstname, data.lastname);
+
             User.create(data).then(function(newUser, created) {
               if (!newUser) {
                 return done(null, false);

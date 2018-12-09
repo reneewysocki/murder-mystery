@@ -10,7 +10,7 @@ module.exports = function(app, passport) {
     passport.authenticate('local-signup', {
       successRedirect: '/dashboard',
       failureRedirect: '/signup',
-      failureFlash: true,
+      //failureFlash: true,
     })
   );
 
@@ -26,6 +26,8 @@ module.exports = function(app, passport) {
       failureFlash: true,
     })
   );
+
+  app.post('/reset_endings', isLoggedIn, authController.reset_endings);
 
   function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) return next();

@@ -76,3 +76,29 @@ a:hover {
   background-color: #94001A;
   border: #94001A;
 }
+
+.ending-desc {
+  font-size: 1.6rem !important;
+  line-height: 3rem;
+}
+
+.border-round {
+  border-radius:10px;
+  border: #94001A 2px solid;
+}
+
+.end-img {
+  width:48px;
+  height:48px;
+  margin-right:5px;
+  margin-left:5px;
+}
+
+.red-divider {
+  border-top:#5d5e60 solid 2px;
+}
+
+.btn-cont {
+  width:75%;
+  font-size: 24px;
+}

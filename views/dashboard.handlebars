@@ -1,30 +1,84 @@
+<div class="row">
+    <img class="logo-signin mx-auto mb-2" src="images/murder-mystery-logo.png" alt="Murder Mystery">
+</div>
+
 <div class="container signinup mt-2 mx-auto col-sm-12 col-lg-10 p-2">
     <div class="row">
-        <div class="col-8 mx-auto">
+        <div class="col-10 mx-auto ending-desc">
             Welcome back {{first}} {{last}}
+            <hr class="red-divider" />
         </div>
     </div>
     <div class="row">
-        <div class="col-8 mx-auto">
-            Story Badges
+        <div class="col-10 mx-auto">
+            {{!-- This form does a get based on user current story page, make generic landing for now --}}
+            <form class="d-flex justify-content-center mb-2" id="murder" name="murder" method="get" action="/murder">
+                <button class="btn btn-danger btn-cont">Continue Story</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10 mx-auto">
+            <div class="border-round pl-3 pr-1 pt-1 pb-1 mb-3">
+                <strong class="ending-desc">Story Badges</strong>
+            </div>
+            <form class="d-flex justify-content-end mb-2" id="reset_endings" name="reset_endings" method="post" action="reset_endings">
+                <button class="btn btn-danger btn-lg ">Reset All Progress?</button>
+            </form>
             {{!-- This will be handlebards template. Need to pull completed endings from user db --}}
-            <div class="border">Badge Placeholder 1 <img src="https://via.placeholder.com/25" /></div>
-            <div class="border">Badge Placeholder 2 <img src="https://via.placeholder.com/25" /></div>
-            <div class="border">Badge Placeholder 3 <img src="https://via.placeholder.com/25" /></div>
-            <div class="border">Badge Placeholder 4 <img src="https://via.placeholder.com/25" /></div>
-            <div class="border">Badge Placeholder 5 <img src="https://via.placeholder.com/25" /></div>
-            <div class="border">Badge Placeholder 6 <img src="https://via.placeholder.com/25" /></div>
-            <div class="border">Badge Placeholder 7 <img src="https://via.placeholder.com/25" /></div>
-            <div class="border">Badge Placeholder 8 <img src="https://via.placeholder.com/25" /></div>
-            <div class="border">Badge Placeholder 9 <img src="https://via.placeholder.com/25" /></div>
-            <div class="border">Badge Placeholder 10 <img src="https://via.placeholder.com/25" /></div>
+            <div class="border-round p-1 mb-1">
+                <img src="/images/Code_Computer_Icon.png" class="end-img" alt="ending achievement image" />
+                <strong class="ending-desc">Ending 1</strong>
+            </div>
+            <div class="border-round p-1 mb-1">
+                <img src="/images/Death_Icon.png" class="end-img" alt="ending achievement image" />
+                <strong class="ending-desc">Ending 2</strong>
+            </div>
+            <div class="border-round p-1 mb-1">
+                <img src="/images/Exit_Icon.png" class="end-img" alt="ending achievement image" />
+                <strong class="ending-desc">Ending 3</strong>
+            </div>
+            <div class="border-round p-1 mb-1">
+                <img src="/images/Knife_Icon.png" class="end-img" alt="ending achievement image" />
+                <strong class="ending-desc">Ending 4</strong>
+            </div>
+            <div class="border-round p-1 mb-1">
+                <img src="/images/Lightbulb_Icon.png" class="end-img" alt="ending achievement image" />
+                <strong class="ending-desc">Ending 5</strong>
+            </div>
+            <div class="border-round p-1 mb-1">
+                <img src="images/Lightning_Icon.png" class="end-img"  alt="ending achievement image" />
+                <strong class="ending-desc">Ending 6</strong>
+            </div>
+            <div class="border-round p-1 mb-1">
+                <img src="/images/Medal_Icon.png" class="end-img"  alt="ending achievement image" />
+                <strong class="ending-desc">Ending 7</strong>
+            </div>
+            <div class="border-round p-1 mb-1">
+                <img src="/images/Monster_Icon.png" class="end-img"  alt="ending achievement image" />
+                <strong class="ending-desc">Ending 8</strong>
+            </div>
+            <div class="border-round p-1 mb-1">
+                <img src="/images/Phone_Charged_Icon.png" class="end-img"  alt="ending achievement image" />
+                <strong class="ending-desc">Ending 9</strong>
+            </div>
+            <div class="border-round p-1 mb-1">
+                <img src="/images/Star_Icon.png" class="end-img"  alt="ending achievement image" />
+                <strong class="ending-desc">Ending 10</strong>
+            </div>
+            <div class="border-round p-1 mb-1">
+                <img src="/images/Tombstone_Icon.png" class="end-img"  alt="ending achievement image" />
+                <strong class="ending-desc">Ending 11</strong>
+            </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-8 mx-auto">
+        <div class="col-10 mx-auto">
             {{!-- TODO THIS WILL OVERRIDE ALL PROGRESS FOR USER --}}
             {{!-- Also I want a LARGE ASS warning modal here if clicked to confirm --}}
-            <button class="btn btn-danger text-center"> Reset All Progress?</button>
+            <form class="d-flex justify-content-end" id="logout" name="logout" method="get" action="logout">
+                <button class="btn btn-danger btn-lg">Logout</button>
+            </form>
         </div>
     </div>
 </div>
