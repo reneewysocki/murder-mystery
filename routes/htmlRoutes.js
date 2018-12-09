@@ -26,6 +26,10 @@ module.exports = function(app) {
   //user dashboard route for userpofile before integration to site
   app.get('/dashboard', (req, res) => {
     res.render('dashboard');
+<<<<<<< HEAD
+=======
+
+>>>>>>> f7bb1233b30da8b2c7a5ec88d7bbfe9afe6df003
   });
 
   // Render 404 page for any unmatched routes
