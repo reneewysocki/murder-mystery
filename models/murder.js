@@ -1,3 +1,4 @@
+
 module.exports = function(sequelize, Sequelize) {
   var Murders = sequelize.define('murders', {
     id: {

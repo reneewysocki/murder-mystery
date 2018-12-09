@@ -4,7 +4,6 @@ module.exports = function(app) {
   // Load index page
   app.get('/', (req, res) => {
     res.render('index');
-  });
 
   //storyboard routing
   app.get('/murder/:id', function(req, res) {
@@ -26,6 +25,7 @@ module.exports = function(app) {
   //user dashboard route for userpofile before integration to site
   app.get('/dashboard', (req, res) => {
     res.render('dashboard');
+
   });
 
   // Render 404 page for any unmatched routes
