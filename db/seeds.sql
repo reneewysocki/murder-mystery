@@ -1,8 +1,8 @@
-USE murderdb;
+USE murder_db;
 
-INSERT INTO 
-    murderdb(burger_name)
-VALUES 
-    ('Impossible'), 
-    ('Texas'), 
+INSERT INTO
+    murder_db(burger_name)
+VALUES
+    ('Impossible'),
+    ('Texas'),
     ('burgersPlain');

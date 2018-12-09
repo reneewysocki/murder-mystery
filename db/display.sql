@@ -1,4 +1,4 @@
-USE murderdb;
+USE murder_db;
 
 SELECT * FROM users;
 

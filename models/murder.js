@@ -32,7 +32,7 @@ module.exports = function(sequelize, Sequelize) {
   Murders.bulkCreate([
     {
       action:
-        'It’s a cold and rainy Monday night.  You’re walking to class at SMU on what seems like a normal evening. You enter Hyer Hall and the lights flicker. You walk up the stairs to room 200 and open the door. You scream',
+        'It’s a cold and rainy Monday night.  You’re walking to class at SMU on what seems like a normal evening. You enter Hyer Hall and the lights flicker. You walk up the stairs to room 200 and open the door. You scream. </br></br> In the middle of the floor, Jack is laying face down, surrounded by blood. There is nothing in the room but the tables, chairs and a single Monster energy drink that has been spilled onto the tile. </br></br> <b>What do you do?</b>',
       optionOne: 'Check for a heart beat.',
       optionTwo: 'Call campus security.',
       murderID: 'start',
