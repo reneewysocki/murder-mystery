@@ -2,6 +2,6 @@ USE murderdb;
 
 SELECT * FROM users;
 
-#use testdb;
+use testdb;
 
-#SELECT * FROM murders;
+SELECT * FROM murders;

@@ -5,20 +5,20 @@ module.exports = function(sequelize, Sequelize) {
       primaryKey: true,
       type: Sequelize.INTEGER,
     },
- 
+
     action: {
       type: Sequelize.TEXT,
       notEmpty: true,
     },
- 
+
     optionOne: {
       type: Sequelize.TEXT,
     },
- 
+
     optionTwo: {
       type: Sequelize.TEXT,
     },
- 
+
     murderID: {
       type: Sequelize.STRING,
     },
@@ -28,7 +28,7 @@ module.exports = function(sequelize, Sequelize) {
       defaultValue: false,
     },
   });
- 
+
   Murders.bulkCreate([
     {
       action:
@@ -64,13 +64,6 @@ module.exports = function(sequelize, Sequelize) {
       murderID: 'A.2.EP',
       endpoint: true,
     },
-  ])
-    .then(() => {
-      return Murders.findAll();
-    })
-    .then((murders) => {
-      console.log(murders);
-    });
+  ]);
   return Murders;
- };
- 
+};

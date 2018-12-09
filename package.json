@@ -13,6 +13,7 @@
   },
   "license": "ISC",
   "dependencies": {
+    "babel-eslint": "^10.0.1",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
     "dotenv": "^6.1.0",
