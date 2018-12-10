@@ -4,7 +4,7 @@ module.exports = {
     password: process.env.MYSQL_PASSWORD || null,
     database: 'murder_db',
     host: 'localhost',
-    dialect: 'mysql'
+    dialect: 'mysql',
   },
   test: {
     username: 'root',
@@ -12,10 +12,10 @@ module.exports = {
     database: 'testdb',
     host: 'localhost',
     dialect: 'mysql',
-    logging: false
+    logging: false,
   },
   production: {
     use_env_variable: 'JAWSDB_URL',
-    dialect: 'mysql'
-  }
+    dialect: 'mysql',
+  },
 };

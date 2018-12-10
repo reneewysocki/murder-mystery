@@ -2,25 +2,23 @@
   <div class="row">
     <div class="col-8 offset-2">
       <div class="action">
-        <p>{{action}}
+        <p>{{{action}}}
         </p>
       </div>
     </div>
   </div>
-    <div class="row">
+  {{#unless endpoint}}
+  <div class="row">
     <div class="col-8 offset-2">
-      <div class="option">
-       {{optionOne}}
-      </div>
+      <a class="btn option btn-danger" href="/murder{{{optionOneLink}}}" role="button">{{{optionOne}}}</a>
     </div>
   </div>
   <div class="row">
     <div class="col-8 offset-2">
-      <div class="option">
-       {{optionTwo}}
-      </div>
+      <a class="btn option btn-danger" href="/murder{{{optionTwoLink}}}" role="button">{{{optionTwo}}}</a>
     </div>
   </div>
+  {{/unless}}
   <div class="row">
     <div class="col-8 offset-2">
       <a href="/">← Back To Home</a>

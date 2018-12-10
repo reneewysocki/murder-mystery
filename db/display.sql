@@ -1,7 +1,7 @@
-USE murderdb;
+USE murder_db;
 
 SELECT * FROM users;
 
-#use testdb;
+use testdb;
 
-#SELECT * FROM murders;
+SELECT * FROM murders;

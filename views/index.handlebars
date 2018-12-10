@@ -6,11 +6,17 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-8 offset-2">
-        <button  onclick="window.location.href='murder'" class="btn btn-lg btn-block btn-danger" id="start-button"><b>Click Here to Begin</b></button>
+      <div class="col-4 offset-2">
+        <a class="btn btn-lg btn-block btn-danger" id="start-button" href="/murder/1" role="button">Click Here to Begin</a>
+      </div>
+      <div class="col-4">
+        <form id="dashboard" name="dashboard" method="get" action="dashboard">
+          <button class="btn btn-lg btn-block btn-danger" id="dashboard-btn" type="submit">View Dashboard</button>
+        </form>
       </div>
     </div>
   </div>
+</div>
 </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
