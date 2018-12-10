@@ -10,7 +10,7 @@ module.exports = function(app, passport) {
     passport.authenticate('local-signup', {
       successRedirect: '/dashboard',
       failureRedirect: '/signup',
-      //failureFlash: true,
+      failureFlash: true,
     })
   );
 
@@ -26,6 +26,11 @@ module.exports = function(app, passport) {
       failureFlash: true,
     })
   );
+
+  //user dashboard route for userpofile before integration to site
+  app.get('/dashboard', isLoggedIn, (req, res) => {
+    res.render('dashboard');
+  });
 
   app.post('/reset_endings', isLoggedIn, authController.reset_endings);
 

@@ -78,6 +78,16 @@ module.exports = function(sequelize, Sequelize) {
       defaultValue: false,
     },
 
+    ending11: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: false,
+    },
+
+    ending12: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: false,
+    },
+
     last_login: {
       type: Sequelize.DATE,
     },
