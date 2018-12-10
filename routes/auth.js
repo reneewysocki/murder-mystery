@@ -27,6 +27,11 @@ module.exports = function(app, passport) {
     })
   );
 
+  //user dashboard route for userpofile before integration to site
+  app.get('/dashboard', isLoggedIn, (req, res) => {
+    res.render('dashboard');
+  });
+
   app.post('/reset_endings', isLoggedIn, authController.reset_endings);
 
   function isLoggedIn(req, res, next) {
