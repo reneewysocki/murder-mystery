@@ -1,7 +1,7 @@
 // Get references to page elements
 const $exampleText = $('#example-text');
 const $exampleDescription = $('#example-description');
-const $submitBtn = $('#submit');
+const $submitBtn = $('.btn');
 const $exampleList = $('#example-list');
 
 // The API object contains methods for each kind of request we'll make
@@ -61,24 +61,8 @@ const refreshExamples = function() {
 // handleFormSubmit is called whenever we submit a new example
 // Save the new example to the db and refresh the list
 const handleFormSubmit = function(event) {
-  event.preventDefault();
-
-  const example = {
-    text: $exampleText.val().trim(),
-    description: $exampleDescription.val().trim(),
-  };
-
-  if (!(example.text && example.description)) {
-    alert('You must enter an example text and description!');
-    return;
-  }
-
-  API.saveExample(example).then(() => {
-    refreshExamples();
-  });
-
-  $exampleText.val('');
-  $exampleDescription.val('');
+  //event.preventDefault();
+  console.log('hi paul');
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked

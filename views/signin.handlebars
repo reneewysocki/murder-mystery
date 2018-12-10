@@ -4,6 +4,9 @@
     </div>
     <div class="row">
         <div class="col-sm-12 col-lg-4 mx-auto p-4 signinup">
+            {{#if message}}
+                <div class="alert alert-danger">{{message}}</div>
+            {{/if}}
             <form id="signin" name="signin" method="post" action="signin">
                 <div class="form-group">
                     <label for="email">Email address</label>
@@ -23,3 +26,6 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>

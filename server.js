@@ -12,7 +12,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
-app.use(flash());
+
 app.use(
   express.urlencoded({
     extended: true,
@@ -26,13 +26,14 @@ app.use(express.static('public'));
 app.use(
   session({
     secret: 'keyboard cat',
-    resave: true,
+    resave: false,
     saveUninitialized: true,
+    cookie: { secure: false },
   })
 ); // session secret
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
-
+app.use(flash());
 // Handlebars
 app.engine(
   'handlebars',
