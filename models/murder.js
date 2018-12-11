@@ -59,10 +59,9 @@ module.exports = function(sequelize, Sequelize) {
       action:
         'You pull out your phone and the battery is dead. You race out of the building and into the quad. It’s pouring rain and you forgot your umbrella. Where do you go?',
       optionOne: 'Run to the Airport Garage to charge your phone',
-      // ADD LINKS
-      optionOneLink: '#',
+      optionOneLink: '/6',
       optionTwo: 'Go to Starbucks and ask to use someone’s phone',
-      optionTwoLink: '#',
+      optionTwoLink: '/7',
       murderID: '2',
     },
     {
@@ -71,56 +70,51 @@ module.exports = function(sequelize, Sequelize) {
       optionOne: 'Find out who it is',
       optionOneLink: '/5',
       optionTwo: 'Run!',
-      //ADD LINKS
-      optionTwoLink: '#',
+      optionTwoLink: '/9',
       murderID: 'A.1',
     },
     {
       action:
         'Who’s there?”, you ask nervously. The figure moves closer to you, still in the shadows. “Who’s there?!” you ask a little louder. The figure moves even closer until you are just inches apart, your back is against the wall. You scream as you feel the knife inserted into your gut. As the darkness falls over you, a voice that sounds like Arnold Schwarzenegger but not quite comes from the figure… “Get to the choppa!',
-      murderID: 'A.2.EP',
+      murderID: '5',
       endpoint: true,
     },
     {
       action:
         'You make your way to the parking garage, but the pond has overflowed, blocking your way, you decide to go try and trek through the water but you remember your fear of swimming since you almost drowned in White Rock Lake.  You hear growling and hissing and a lot of Sports Center.  Across the pond towards your car is Dimitry.  What do you do?',
-      //ADD LINKS & FIX murderID REPLACE #
       optionOne:
         'Ask him what he is doing in a speedo and if he knows what happened to Jack?',
-      optionOneLink: '#',
+      optionOneLink: '/10',
       optionTwo:
         'Realize he is repeating Sport Center stats from 1997 and his head spins around and he asks you if you pulled the latest repository for class…you get freaked out and decide to run towards Deadman.',
-      optionTwoLink: '#',
+      optionTwoLink: '/11',
       murderID: '#',
     },
     {
       action:
         'You hurry to Starbucks, get a grande dark roast (because if you’re already there you might as well) and see Harrell and William doing the same thing. You',
-      //ADD LINKS & FIX murderID REPLACE #
       optionOne: 'Mention what you saw in Hyer',
-      optionOneLink: '#',
+      optionOneLink: '/12',
       optionTwo: 'Don’t mention what you saw ',
-      optionTwoLink: '#',
+      optionTwoLink: '/13',
       murderID: '#',
     },
     {
       action:
         'You stand over the collapsed figure’s body. “What the f*ck, man? Why did you do that?” It’s your classmate, Dave. “Why did you have an axe?!” you interrogate. “I was going to practice my axe throwing after class!” he says defensively. “I’m sorry I hit you with a chair, but do you know who killed Jack?” you ask as you help him from the floor. He looks around and says “I might have an idea… Follow me.” He turns and walks away. What do you do?',
-      //ADD LINKS & FIX murderID REPLACE #
       optionOne: 'Follow him',
-      optionOneLink: '#',
+      optionOneLink: '/14',
       optionTwo: 'Sneak away. You don’t trust him',
-      optionTwoLink: '#',
+      optionTwoLink: '/15',
       murderID: '#',
     },
     {
       action:
         'You hurry out of the classroom and decide the best option is to see if there is anyone at Starbucks. You rush to Starbucks, get a grande dark roast (because if you’re already there you might as well) and see Harrell and William doing the same thing. You',
-      //ADD LINKS & FIX murderID REPLACE #
       optionOne: 'Mention what you saw in Hyer',
-      optionOneLink: '#',
+      optionOneLink: '/12',
       optionTwo: 'Don’t mention what you saw',
-      optionTwoLink: '#',
+      optionTwoLink: '/13',
       murderID: '#',
     },
     {
@@ -140,7 +134,7 @@ module.exports = function(sequelize, Sequelize) {
       //ADD LINKS & FIX murderID REPLACE #
       optionOne:
         'As you run through Deadman, you stop to take a “Courage Poop” and you find a power cord from class in the bathroom.  It is the larger size one and could be used as a weapon.  You pick it up and continue running towards Basement of Dallas Hall',
-      optionOneLink: '#',
+      optionOneLink: '/16',
       optionTwo:
         '2.	As you run through Deadman, you get lost and run into Jessica.  Out of nowhere she asks you if your Inspector is open on your browser.  Impatiently she starts to tell you to open your Inspector on your browser, you get nervous and run away from her.  She is fast and starts chasing you.  You run into Rebecca is dog, Tito, wearing a UPS Outfit.  Tito tells you to go down the hallway and go left towards the exit.  Tito also tells you that he will stop Jessica from chasing you, using his cuteness.  As you go down the hallway and turn left, you find a package.  Its from Tito.  Inside is a note.  You continue to the Basement of Dallas Hall',
       optionTwoLink: '#',
@@ -149,32 +143,30 @@ module.exports = function(sequelize, Sequelize) {
     {
       action:
         'You ask if either of them had been in the classroom yet and neither of them have. You mention what you saw and they each have very different reactions. Harrell decides that the three of you should get to the bottom of this and wants to go back to the room to investigate. William cautiously states that the three of you should check out Dedman Hall, because that’s where class had been moved previously. You',
-      //ADD LINKS & FIX murderID REPLACE #
       optionOne: 'Agree with Harrell and return to Hyer',
-      optionOneLink: '#',
+      optionOneLink: '/19',
       optionTwo: 'Agree with William and check out Dedman',
-      optionTwoLink: '#',
+      optionTwoLink: '/20',
       murderID: '#',
     },
     {
       action:
-        'You see how they’re doing and mention that you went to class and didn’t see anyone in there. Confused, they ask if you think they should check out Dallas Hall - where class had been moved in the past. You',
-      //ADD LINKS & FIX murderID REPLACE #
+        'You see how they’re doing and mention that you went to class and didn’t see anyone in there. Confused, they ask if you think they should check out Dallas Hall - where class had been moved in the past. You:',
       optionOne: 'Return to Hyer and deny knowing about anything in there',
-      optionOneLink: '#',
+      optionOneLink: '/21',
       optionTwo: 'Check out Dallas Hall while they go to Hyer',
-      optionTwoLink: '#',
+      optionTwoLink: '/16',
       murderID: '#',
     },
     {
       action:
-        'You follow Dave, and he takes you behind Dallas Hall to a tiny building named Blanton Observatory, which is padlocked shut. You',
+        'You follow Dave, and he takes you behind Dallas Hall to a tiny building named Blanton Observatory, which is padlocked shut. You:',
       //ADD LINKS & FIX murderID REPLACE #
       optionOne:
         'Use your picklocking skills that you never thought you would need to use',
-      optionOneLink: '#',
+      optionOneLink: '/26',
       optionTwo: 'Find somewhere else to look for classmates or clues',
-      optionTwoLink: '#',
+      optionTwoLink: '/16',
       murderID: '#',
     },
     {
@@ -188,11 +180,11 @@ module.exports = function(sequelize, Sequelize) {
         'You walk into Dallas Hall.  There is blood all over, its dripping from the walls and the scent of Monster is present in the air.  You freeze in fear and Erik pops out wearing his Military Fatigues and wearing a “Ammo Belt” with wireless “mouses” strap to them.  He says he is following the “Boot Camp Killer”.  You verify that class is canceled and you tell Erik about how you want to go into the Basement to finish this out',
       //ADD LINKS & FIX murderID REPLACE #
       optionOne:
-        'Ask Erik to follow you to the basement to investigate whats down there?',
-      optionOneLink: '#',
+        'Ask Erik to follow you to the basement to investigate what is down there?',
+      optionOneLink: '/17',
       optionTwo:
         'Ask Erik to get help and go to the basement by yourself to investigate what is down there?',
-      optionTwoLink: '#',
+      optionTwoLink: '/18',
       murderID: '#',
     },
     {
@@ -216,11 +208,10 @@ module.exports = function(sequelize, Sequelize) {
     {
       action:
         'You hurry inside Dedman to escape the rain in hopes of seeing the rest of your class, but just like in Hyer, the lights are flickering and nobody is in sight. The only thing you see is a single, opened Monster Energy at the end of a long hallway. You',
-      //ADD LINKS & FIX murderID REPLACE #
       optionOne: 'Inspect the can?',
-      optionOneLink: '#',
+      optionOneLink: '/22',
       optionTwo: 'Search upstairs?',
-      optionTwoLink: '#',
+      optionTwoLink: '/23',
       murderID: '#',
     },
     {
@@ -236,13 +227,12 @@ module.exports = function(sequelize, Sequelize) {
       endpoint: true,
     },
     {
-      action:
-        'The three of you run upstairs and approach another hallway. You:',
+      action: 'The three of you run upstairs and approach another hallway. You',
       //ADD LINKS & FIX murderID REPLACE #
       optionOne: 'Go left',
-      optionOneLink: '#',
+      optionOneLink: '/24',
       optionTwo: 'Go right',
-      optionTwoLink: '#',
+      optionTwoLink: '/25',
       murderID: '#',
     },
     {
@@ -254,6 +244,12 @@ module.exports = function(sequelize, Sequelize) {
     {
       action:
         'The lights are flickering, but for some reason there is one light towards the end of the hall that stays on constantly. As you get closer and closer, a ghostly figure flashes before you for a split second and disappears. The three of you decide that this has become too real and don’t want to explore anymore. You leave the building, call the police with William’s phone and let them handle everything from there, while you scurry to your car and go home to watch the stream of class',
+      murderID: '#',
+      endpoint: true,
+    },
+    {
+      action:
+        'After a few minutes of trying to pick the lock, you look around and find a large rock. You proceed to pick up said rock and repeatedly hit the padlock until it breaks off from the door. You open the door to the tiny shack of a building, and see your other TA, Jessica. She is alive, but tied to a chair. She claims she is being tortured but she shows no signs of struggling to get away from being tied up. She then tells you to remove the curtain the covers the entire wall of the circular building. The opened curtain reveals hundreds of opened, full cans of Monster Energy, her most hated enemy. As you and Dave start to untie Jessica from the chair, the door slams shut. You try pushing the door open but with no luck. After hours of banging on the door and yelling at the top of your lungs, the door finally opens. It’s your instructor, Jon. “The only way I let any of you out of here is if Jessica drinks one can of Monster,” Jon states. Jessica says absolutely not, so Jon shuts the door and the three of you are never heard from again.',
       murderID: '#',
       endpoint: true,
     },
