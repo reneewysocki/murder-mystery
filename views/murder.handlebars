@@ -18,10 +18,22 @@
       <a class="btn option btn-danger" href="/murder{{{optionTwoLink}}}" role="button">{{{optionTwo}}}</a>
     </div>
   </div>
-  {{/unless}}
   <div class="row">
     <div class="col-8 offset-2">
       <a href="/">← Back To Home</a>
     </div>
   </div>
+  {{/unless}}
+  {{#if endpoint}}
+  <div class="row">
+    <div class="col-8 offset-2">
+      <a class="btn option btn-danger" href="/dashboard" role="button">Click Here to Check Your Achievements</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8 offset-2">
+      <a class="btn option btn-danger" href="/" role="button">Click Here to Play Again</a>
+    </div>
+  </div>
+  {{/if}}
 </div>
