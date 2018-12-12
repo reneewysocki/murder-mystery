@@ -57,8 +57,8 @@ exports.reset_endings = function(req, res) {
         ending8: 0,
         ending9: 0,
         ending10: 0,
-        ending11: 1,
-        ending12: 1,
+        ending11: 0,
+        ending12: 0,
       },
       {
         where: {
