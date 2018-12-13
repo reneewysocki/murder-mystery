@@ -51,10 +51,10 @@ module.exports = {
           action:
             'You make your way to the parking garage, but the pond has overflowed, blocking your way, you decide to go try and trek through the water but you remember your fear of swimming since you almost drowned in White Rock Lake.  You hear growling and hissing and a lot of Sports Center.  Across the pond towards your car is Dimitry.  What do you do?',
           optionOne:
-            'Ask him what he is doing in a speedo and if he knows what happened to Jack?',
+            'Ask him what he is doing in a speedo and if he knows what <br> happened to Jack?',
           optionOneLink: '/10',
           optionTwo:
-            'Realize he is repeating Sport Center stats from 1997 and his head spins around and he asks you if you pulled the latest repository for class…you get freaked out and decide to run towards Deadman.',
+            'Realize he is repeating Sport Center stats from 1997 and his head spins around <br> and he asks you if you pulled the latest repository for class… <br> you get freaked out and decide to run towards Deadman.',
           optionTwoLink: '/11',
           murderID: '#',
         },
@@ -92,7 +92,7 @@ module.exports = {
           optionOne: 'You take the Code and run towards Deadman Building',
           optionOneLink: '#',
           optionTwo:
-            'You don’t believe Dmitry but you ask him if he has any cash on him, he says yes and begs you to take it, he tells you to trust him.  He hands you $4.29 and you run to Deadman Building',
+            'You don’t believe Dmitry but you ask him if he has any cash on him, he says yes <br> and begs you to take it, he tells you to trust him.  He hands you $4.29 <br> and you run to Deadman Building',
           optionTwoLink: '#',
           murderID: '#',
         },
@@ -101,10 +101,10 @@ module.exports = {
             'You enter Deadman and your laptop connects to the wifi, you remember how Dmitry told you to pull the latest push.  You pull the latest repo push, and there is a new folder in the Class Repository.  It is called red-dead-redemption.  Inside the repo is a detailed README which followed the class recommendations on writing READMEs.  Inside it mentions to go to the Basement of Dallas Hall',
           //ADD LINKS & FIX murderID REPLACE #
           optionOne:
-            'As you run through Deadman, you stop to take a “Courage Poop” and you find a power cord from class in the bathroom.  It is the larger size one and could be used as a weapon.  You pick it up and continue running towards Basement of Dallas Hall',
+            'As you run through Deadman, you stop to take a “Courage Poop” <br> and you find a power cord from class in the bathroom.  <br> It is the larger size one and could be used as a weapon. <br>  You pick it up and continue running towards Basement of Dallas Hall',
           optionOneLink: '/16',
           optionTwo:
-            '2.	As you run through Deadman, you get lost and run into Jessica.  Out of nowhere she asks you if your Inspector is open on your browser.  Impatiently she starts to tell you to open your Inspector on your browser, you get nervous and run away from her.  She is fast and starts chasing you.  You run into Rebecca is dog, Tito, wearing a UPS Outfit.  Tito tells you to go down the hallway and go left towards the exit.  Tito also tells you that he will stop Jessica from chasing you, using his cuteness.  As you go down the hallway and turn left, you find a package.  Its from Tito.  Inside is a note.  You continue to the Basement of Dallas Hall',
+            'As you run through Deadman, you get lost and run into Jessica.  <br> Out of nowhere she asks you if your Inspector is open on your browser. <br> Impatiently she starts to tell you to open your Inspector on your browser, you get nervous and run away from her. <br>  She is fast and starts chasing you.  You run into Rebecca is dog, Tito, wearing a UPS Outfit. <br> Tito tells you to go down the hallway and go left towards the exit. <br> Tito also tells you that he will stop Jessica from chasing you, using his cuteness. <br>  As you go down the hallway and turn left, you find a package. Its from Tito. <br> Inside is a note.  You continue to the Basement of Dallas Hall',
           optionTwoLink: '#',
           murderID: '#',
         },
